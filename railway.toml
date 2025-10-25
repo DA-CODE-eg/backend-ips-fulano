@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "npm start"
+
+[[services]]
+name = "backend-ips-fulano"
+port = 3000
+
+[services.env]
+NODE_ENV = "production"
